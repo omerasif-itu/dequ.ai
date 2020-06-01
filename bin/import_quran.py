@@ -41,7 +41,8 @@ def _download_audio(location):
     datapath  = location
     target    = path.join(datapath, "quran")
     targetwav = path.join(target,'wav')
-    recitors  = ['Husary_64kbps','Alafasy_64kbps','Ayman_Sowaid_64kbps','Ghamadi_40kbps','Maher_AlMuaiqly_64kbps','Abdullah_Basfar_64kbps','Abu_Bakr_Ash-Shaatree_64kbps']
+#' Alafasy_64kbps','Ayman_Sowaid_64kbps','Ghamadi_40kbps','Maher_AlMuaiqly_64kbps','Abdullah_Basfar_64kbps','Abu_Bakr_Ash-Shaatree_64kbps'
+    recitors  = ['Husary_64kbps']
     if os.path.exists(targetwav) and len(os.listdir(targetwav)) >= (6236*len(recitors)):
         print("Seems you have downloaded all wav files before .. skipping.")
         return
