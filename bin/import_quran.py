@@ -147,8 +147,9 @@ def _preprocess_data(location, amount):
     total_size = 0
     for root, dirnames, filenames in os.walk(targetwav):
         for filename in fnmatch.filter(filenames, "*.wav"):
-            full_wav = os.path.join(root, filename)
-            wav_filesize = path.getsize(full_wav)
+            full_wav_name = filename;
+            full_wav_size = os.path.join(root, filename)
+            wav_filesize = path.getsize(full_wav_size)
             if wav_filesize>amount_thr[amount]:
                 continue
             total_size += wav_filesize
@@ -156,15 +157,15 @@ def _preprocess_data(location, amount):
             aya_num  = int(filename[3:6])
             trans = qurDict[str(aya_num + sura_num*1000)]
             if aya_num%10 > 1:
-                train_list_wavs.append(full_wav)
+                train_list_wavs.append(full_wav_name)
                 train_list_trans.append(trans)
                 train_list_size.append(wav_filesize)
             elif aya_num%10 > 0:
-                dev_list_wavs.append(full_wav)
+                dev_list_wavs.append(full_wav_name)
                 dev_list_trans.append(trans)
                 dev_list_size.append(wav_filesize)
             else:
-                test_list_wavs.append(full_wav)
+                test_list_wavs.append(full_wav_name)
                 test_list_trans.append(trans)
                 test_list_size.append(wav_filesize)
     print (f"Total audio size in bytes: {total_size}")
