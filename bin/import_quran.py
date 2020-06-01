@@ -147,7 +147,7 @@ def _preprocess_data(location, amount):
     total_size = 0
     for root, dirnames, filenames in os.walk(targetwav):
         for filename in fnmatch.filter(filenames, "*.wav"):
-            full_wav_name = filename;
+            full_wav_name = os.path.join('wav', filename)
             full_wav_size = os.path.join(root, filename)
             wav_filesize = path.getsize(full_wav_size)
             if wav_filesize>amount_thr[amount]:
