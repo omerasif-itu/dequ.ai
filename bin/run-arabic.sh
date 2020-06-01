@@ -22,11 +22,11 @@ fi;
 
 python -u DeepSpeech.py --noshow_progressbar \
 	--alphabet_config_path files/alphabet.qr.txt \
-  --train_files data/ar1/train.csv \
-  --test_files data/ar1/test.csv \
+  --train_files data/ar1/audio.csv \
+  --test_files data/ar1/audio.csv \
   --train_batch_size 1 \
   --test_batch_size 1 \
-  --n_hidden 100 \
+  --n_hidden 512 \
   --epochs 200 \
   --checkpoint_dir data/ar1/ckpt \
 		--scorer '' \
