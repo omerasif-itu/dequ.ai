@@ -23,7 +23,7 @@ python3 -u DeepSpeech.py \
   --test_files "$COMPUTE_DATA_DIR/quran_test.csv" \
   --alphabet_config_path "$COMPUTE_DATA_DIR/quran-alphabets.txt" \
   --scorer "$COMPUTE_DATA_DIR/lm/quran.scorer" \
-  --export_dir "$COMPUTE_DATA_DIR" \
+  --export_dir "/content/drive/My Drive/colabase/dequ_ckpts" \
   --train_batch_size 32 \
   --dev_batch_size 32 \
   --test_batch_size 32 \
