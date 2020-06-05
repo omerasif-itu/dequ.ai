@@ -24,16 +24,16 @@ python3 -u DeepSpeech.py \
   --alphabet_config_path "$COMPUTE_DATA_DIR/quran-alphabets.txt" \
   --scorer "$COMPUTE_DATA_DIR/lm/quran.scorer" \
   --export_dir "/content/drive/My Drive/colabase/dequ_ckpts" \
-  --train_batch_size 32 \
-  --dev_batch_size 32 \
-  --test_batch_size 32 \
+  --train_batch_size 96 \
+  --dev_batch_size 96 \
+  --test_batch_size 96 \
   --use_allow_growth "true" \
   --noearly_stop \
   --epochs 24 \
   --export_language "ar" \
-  --n_hidden 512 \
+  --n_hidden 1024 \
   --dropout_rate 0.5 \
-  --learning_rate 0.001 \
+  --learning_rate 0.0001 \
   --checkpoint_dir "/content/drive/My Drive/colabase/dequ_ckpts" \
   --max_to_keep 2 \ 
   "$@"
