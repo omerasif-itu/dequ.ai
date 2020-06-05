@@ -1,0 +1,217 @@
+++ '[' '!' -f DeepSpeech.py ']'
+++ '[' '!' -d '' ']'
+++ COMPUTE_DATA_DIR=data/quran
+++ '[' '!' -f data/quran/quran_train.csv ']'
+++ python3 -u DeepSpeech.py --train_files data/quran/quran_train.csv --dev_files data/quran/quran_dev.csv --test_files data/quran/quran_test.csv --alphabet_config_path data/quran/quran-alphabets.txt --scorer data/quran/lm/quran.scorer --export_dir data/quran --train_batch_size 32 --dev_batch_size 32 --test_batch_size 32 --use_allow_growth true --noearly_stop --epochs 24 --export_language ar --n_hidden 512 --dropout_rate 0.5 --learning_rate 0.001 --checkpoint_dir '/content/drive/My Drive/colabase/dequ_ckpts' --max_to_keep 2 ' '
+I Loading best validating checkpoint from /content/drive/My Drive/colabase/dequ_ckpts/best_dev-5782
+I Loading variable from checkpoint: beta1_power
+I Loading variable from checkpoint: beta2_power
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam_1
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam_1
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/bias/Adam
+I Loading variable from checkpoint: layer_1/bias/Adam_1
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_1/weights/Adam
+I Loading variable from checkpoint: layer_1/weights/Adam_1
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/bias/Adam
+I Loading variable from checkpoint: layer_2/bias/Adam_1
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_2/weights/Adam
+I Loading variable from checkpoint: layer_2/weights/Adam_1
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/bias/Adam
+I Loading variable from checkpoint: layer_3/bias/Adam_1
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_3/weights/Adam
+I Loading variable from checkpoint: layer_3/weights/Adam_1
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/bias/Adam
+I Loading variable from checkpoint: layer_5/bias/Adam_1
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_5/weights/Adam
+I Loading variable from checkpoint: layer_5/weights/Adam_1
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/bias/Adam
+I Loading variable from checkpoint: layer_6/bias/Adam_1
+I Loading variable from checkpoint: layer_6/weights
+I Loading variable from checkpoint: layer_6/weights/Adam
+I Loading variable from checkpoint: layer_6/weights/Adam_1
+I Loading variable from checkpoint: learning_rate
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:01:14 | Steps: 98 | Loss: 27.313017      
+Epoch 0 | Validation | Elapsed Time: 0:00:08 | Steps: 13 | Loss: 29.446369 | Dataset: data/quran/quran_dev.csv
+I Saved new best validating model with loss 29.446369 to: /content/drive/My Drive/colabase/dequ_ckpts/best_dev-5880
+Epoch 1 |   Training | Elapsed Time: 0:01:12 | Steps: 98 | Loss: 26.600189      
+Epoch 1 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.864647 | Dataset: data/quran/quran_dev.csv
+I Saved new best validating model with loss 27.864647 to: /content/drive/My Drive/colabase/dequ_ckpts/best_dev-5978
+Epoch 2 |   Training | Elapsed Time: 0:01:11 | Steps: 98 | Loss: 25.939086      
+Epoch 2 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 28.569093 | Dataset: data/quran/quran_dev.csv
+Epoch 3 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 25.609579      
+Epoch 3 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.977567 | Dataset: data/quran/quran_dev.csv
+Epoch 4 |   Training | Elapsed Time: 0:01:08 | Steps: 98 | Loss: 24.758907      
+Epoch 4 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 28.184896 | Dataset: data/quran/quran_dev.csv
+Epoch 5 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 25.733316      
+Epoch 5 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.098715 | Dataset: data/quran/quran_dev.csv
+I Saved new best validating model with loss 27.098715 to: /content/drive/My Drive/colabase/dequ_ckpts/best_dev-6370
+Epoch 6 |   Training | Elapsed Time: 0:01:10 | Steps: 98 | Loss: 25.164972      
+Epoch 6 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 29.863538 | Dataset: data/quran/quran_dev.csv
+Epoch 7 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 24.954409      
+Epoch 7 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.904394 | Dataset: data/quran/quran_dev.csv
+Epoch 8 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 24.038583      
+Epoch 8 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 28.535802 | Dataset: data/quran/quran_dev.csv
+Epoch 9 |   Training | Elapsed Time: 0:01:11 | Steps: 98 | Loss: 24.027570      
+Epoch 9 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 28.247341 | Dataset: data/quran/quran_dev.csv
+Epoch 10 |   Training | Elapsed Time: 0:01:10 | Steps: 98 | Loss: 23.863791     
+Epoch 10 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 28.223894 | Dataset: data/quran/quran_dev.csv
+Epoch 11 |   Training | Elapsed Time: 0:01:10 | Steps: 98 | Loss: 23.942853     
+Epoch 11 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.963588 | Dataset: data/quran/quran_dev.csv
+Epoch 12 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 23.197187     
+Epoch 12 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.328272 | Dataset: data/quran/quran_dev.csv
+Epoch 13 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 22.462675     
+Epoch 13 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 26.674232 | Dataset: data/quran/quran_dev.csv
+I Saved new best validating model with loss 26.674232 to: /content/drive/My Drive/colabase/dequ_ckpts/best_dev-7154
+Epoch 14 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 22.458248     
+Epoch 14 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 26.185094 | Dataset: data/quran/quran_dev.csv
+I Saved new best validating model with loss 26.185094 to: /content/drive/My Drive/colabase/dequ_ckpts/best_dev-7252
+Epoch 15 |   Training | Elapsed Time: 0:01:08 | Steps: 98 | Loss: 21.589255     
+Epoch 15 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 26.794816 | Dataset: data/quran/quran_dev.csv
+Epoch 16 |   Training | Elapsed Time: 0:01:08 | Steps: 98 | Loss: 22.190905     
+Epoch 16 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.427604 | Dataset: data/quran/quran_dev.csv
+Epoch 17 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 21.555135     
+Epoch 17 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.072400 | Dataset: data/quran/quran_dev.csv
+Epoch 18 |   Training | Elapsed Time: 0:01:10 | Steps: 98 | Loss: 21.306974     
+Epoch 18 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 25.821273 | Dataset: data/quran/quran_dev.csv
+I Saved new best validating model with loss 25.821273 to: /content/drive/My Drive/colabase/dequ_ckpts/best_dev-7644
+Epoch 19 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 20.323146     
+Epoch 19 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 26.266474 | Dataset: data/quran/quran_dev.csv
+Epoch 20 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 21.150145     
+Epoch 20 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 28.951786 | Dataset: data/quran/quran_dev.csv
+Epoch 21 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 21.505993     
+Epoch 21 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.754805 | Dataset: data/quran/quran_dev.csv
+Epoch 22 |   Training | Elapsed Time: 0:01:10 | Steps: 98 | Loss: 20.475842     
+Epoch 22 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.093703 | Dataset: data/quran/quran_dev.csv
+Epoch 23 |   Training | Elapsed Time: 0:01:09 | Steps: 98 | Loss: 23.257483     
+Epoch 23 | Validation | Elapsed Time: 0:00:07 | Steps: 13 | Loss: 27.745118 | Dataset: data/quran/quran_dev.csv
+I FINISHED optimization in 0:31:12.698766
+I Loading best validating checkpoint from /content/drive/My Drive/colabase/dequ_ckpts/best_dev-7644
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+Testing model on data/quran/quran_test.csv
+Test epoch | Steps: 10 | Elapsed Time: 0:01:23                                  
+Test on data/quran/quran_test.csv - WER: 0.025944, CER: 0.007536, loss: 21.002396
+--------------------------------------------------------------------------------
+Best WER: 
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 83.654678
+ - wav: file://data/quran/wav/018080_Husary_64kbps.wav
+ - src: "وَأَمَّا ٱلْغُلَٰمُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ فَخَشِينَآ أَن يُرْهِقَهُمَا طُغْيَٰنًا وَكُفْرًا"
+ - res: "وَأَمَّا ٱلْغُلَٰمُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ فَخَشِينَآ أَن يُرْهِقَهُمَا طُغْيَٰنًا وَكُفْرًا"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 77.594231
+ - wav: file://data/quran/wav/003100_Husary_64kbps.wav
+ - src: "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِن تُطِيعُوا۟ فَرِيقًا مِّنَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَٰبَ يَرُدُّوكُم بَعْدَ إِيمَٰنِكُمْ كَٰفِرِينَ"
+ - res: "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِن تُطِيعُوا۟ فَرِيقًا مِّنَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَٰبَ يَرُدُّوكُم بَعْدَ إِيمَٰنِكُمْ كَٰفِرِينَ"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 68.273018
+ - wav: file://data/quran/wav/011010_Husary_64kbps.wav
+ - src: "وَلَئِنْ أَذَقْنَٰهُ نَعْمَآءَ بَعْدَ ضَرَّآءَ مَسَّتْهُ لَيَقُولَنَّ ذَهَبَ ٱلسَّيِّـَٔاتُ عَنِّىٓ إِنَّهُۥ لَفَرِحٌ فَخُورٌ"
+ - res: "وَلَئِنْ أَذَقْنَٰهُ نَعْمَآءَ بَعْدَ ضَرَّآءَ مَسَّتْهُ لَيَقُولَنَّ ذَهَبَ ٱلسَّيِّـَٔاتُ عَنِّىٓ إِنَّهُۥ لَفَرِحٌ فَخُورٌ"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 67.694870
+ - wav: file://data/quran/wav/020120_Husary_64kbps.wav
+ - src: "فَوَسْوَسَ إِلَيْهِ ٱلشَّيْطَٰنُ قَالَ يَٰٓـَٔادَمُ هَلْ أَدُلُّكَ عَلَىٰ شَجَرَةِ ٱلْخُلْدِ وَمُلْكٍ لَّا يَبْلَىٰ"
+ - res: "فَوَسْوَسَ إِلَيْهِ ٱلشَّيْطَٰنُ قَالَ يَٰٓـَٔادَمُ هَلْ أَدُلُّكَ عَلَىٰ شَجَرَةِ ٱلْخُلْدِ وَمُلْكٍ لَّا يَبْلَىٰ"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 65.818146
+ - wav: file://data/quran/wav/003200_Husary_64kbps.wav
+ - src: "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱصْبِرُوا۟ وَصَابِرُوا۟ وَرَابِطُوا۟ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُفْلِحُونَ"
+ - res: "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱصْبِرُوا۟ وَصَابِرُوا۟ وَرَابِطُوا۟ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُفْلِحُونَ"
+--------------------------------------------------------------------------------
+Median WER: 
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 13.122112
+ - wav: file://data/quran/wav/069030_Husary_64kbps.wav
+ - src: "خُذُوهُ فَغُلُّوهُ"
+ - res: "خُذُوهُ فَغُلُّوهُ"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 13.016879
+ - wav: file://data/quran/wav/055050_Husary_64kbps.wav
+ - src: "فِيهِمَا عَيْنَانِ تَجْرِيَانِ"
+ - res: "فِيهِمَا عَيْنَانِ تَجْرِيَانِ"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 12.912901
+ - wav: file://data/quran/wav/003060_Husary_64kbps.wav
+ - src: "ٱلْحَقُّ مِن رَّبِّكَ فَلَا تَكُن مِّنَ ٱلْمُمْتَرِينَ"
+ - res: "ٱلْحَقُّ مِن رَّبِّكَ فَلَا تَكُن مِّنَ ٱلْمُمْتَرِينَ"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 12.887054
+ - wav: file://data/quran/wav/055010_Husary_64kbps.wav
+ - src: "وَٱلْأَرْضَ وَضَعَهَا لِلْأَنَامِ"
+ - res: "وَٱلْأَرْضَ وَضَعَهَا لِلْأَنَامِ"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 12.795286
+ - wav: file://data/quran/wav/037100_Husary_64kbps.wav
+ - src: "رَبِّ هَبْ لِى مِنَ ٱلصَّٰلِحِينَ"
+ - res: "رَبِّ هَبْ لِى مِنَ ٱلصَّٰلِحِينَ"
+--------------------------------------------------------------------------------
+Worst WER: 
+--------------------------------------------------------------------------------
+WER: 0.500000, CER: 0.131579, loss: 42.774399
+ - wav: file://data/quran/wav/053050_Husary_64kbps.wav
+ - src: "وَأَنَّهُۥٓ أَهْلَكَ عَادًا ٱلْأُولَىٰ"
+ - res: "وَأَنَّهُۥٓ أَهْلَكَ عَادَ مِن ٱلْأُولَىٰ"
+--------------------------------------------------------------------------------
+WER: 0.500000, CER: 0.120000, loss: 37.421738
+ - wav: file://data/quran/wav/068020_Husary_64kbps.wav
+ - src: "فَأَصْبَحَتْ كَٱلصَّرِيمِ"
+ - res: "وَأَصْبَحَ كَٱلصَّرِيمِ"
+--------------------------------------------------------------------------------
+WER: 0.500000, CER: 0.153846, loss: 31.470469
+ - wav: file://data/quran/wav/037070_Husary_64kbps.wav
+ - src: "فَهُمْ عَلَىٰٓ ءَاثَٰرِهِمْ يُهْرَعُونَ"
+ - res: "وَهُمْ عَلَىٰٓ ءَاثَٰرِهِمْ يُمَارُونَ"
+--------------------------------------------------------------------------------
+WER: 0.750000, CER: 0.424242, loss: 60.518524
+ - wav: file://data/quran/wav/035020_Husary_64kbps.wav
+ - src: "وَلَا ٱلظُّلُمَٰتُ وَلَا ٱلنُّورُ"
+ - res: "وَلَهُ مَا وَلَا نُّورٍ"
+--------------------------------------------------------------------------------
+WER: 1.333333, CER: 0.444444, loss: 74.686638
+ - wav: file://data/quran/wav/053020_Husary_64kbps.wav
+ - src: "وَمَنَوٰةَ ٱلثَّالِثَةَ ٱلْأُخْرَىٰٓ"
+ - res: "وَأَنَا أَثَرِ فَتًى ٱلْأُخْرَىٰ"
+--------------------------------------------------------------------------------
+I Exporting the model...
+I Loading best validating checkpoint from /content/drive/My Drive/colabase/dequ_ckpts/best_dev-7644
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+I Models exported at data/quran
+I Model metadata file saved to data/quran/author_model_0.0.1.md. Before submitting the exported 
